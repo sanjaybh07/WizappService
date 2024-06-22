@@ -99,7 +99,7 @@ namespace RestWizappService.Appmethods
 
                 cExpr = $" Select user_Code userCode,userName,role_id roleCode,isnull(inactive,0) as inactive,email loginId," +
                     $" convert(varchar(20),format(refreshTokenValidity,'dd-MMM-yyyy')) refreshTokenValidity,(CASE WHEN ISNULL(API_ACCESS,0)=0 THEN '' else '1' END) apiAccess " +
-                    $"from users ";
+                    $"from users where 1=2";
 
                 SqlCommand cmd = new SqlCommand(cExpr, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
