@@ -22,7 +22,7 @@ namespace RestWizappService.Appmethods
             {
 
                 string cExpr = "declare @cConfigCOls varchar(1000) select @cConfigCOls=coalesce(@cConfigCOls+',','')+column_name from " +
-                        " config_attr (NOLOCK) where table_caption<>'' select @cConfigCOls artCols";
+                        " config_attr (NOLOCK) where table_caption<>'' select @cConfigCOls artColsNew";
                 SqlCommand cmd = new SqlCommand(cExpr, conn);
 
                 object result = cmd.ExecuteScalar();
@@ -66,7 +66,7 @@ namespace RestWizappService.Appmethods
                 if (!string.IsNullOrEmpty(cErr))
                     goto lblLast;
 
-                string cExpr = "SELECT article_code,"+cAttrCols+" INTO #tAttrmst FROM art_names (NOLOCK) WHERE 1=2";
+                string cExpr = "SELECT article_code,"+cAttrCols+" INTO #tAttrmstNew FROM art_names (NOLOCK) WHERE 1=2";
                 cmd=new SqlCommand(cExpr,conn);
 
                 cmd.ExecuteNonQuery();
