@@ -405,8 +405,8 @@ namespace RestWizappService.Appmethods
                             " or ho_section_name<>a.section_name";
 
                     sda = new SqlDataAdapter(cmd);
-                    dSetMismatches.Tables.Add("article");
-                    sda.Fill(dSetMismatches.Tables["article"]);
+                    dSetMismatches.Tables.Add("article1");
+                    sda.Fill(dSetMismatches.Tables["article2"]);
                 }
 
 
