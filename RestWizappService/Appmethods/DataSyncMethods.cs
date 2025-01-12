@@ -229,7 +229,6 @@ namespace RestWizappService.Appmethods
                 //DataTable tMst = globalMethods.CreateDataTablewithNull<PosSkuSynch>(entryMstList);
 
 
-
                 conn = globalMethods.GetSqlConnection(ref cErr);
                 if (!String.IsNullOrEmpty(cErr))
                     goto lblLast;

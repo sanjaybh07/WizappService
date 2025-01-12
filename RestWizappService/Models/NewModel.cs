@@ -2,7 +2,8 @@ using System;
 
 namespace RestWizappService.Models;
 
-public class NewModel
+
+public class NewModel1
 {
- // This is comment of new file
+//Changed the model class name
 }

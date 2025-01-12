@@ -16,6 +16,8 @@ namespace RestWizappService.Models
         public static DateTime refreshTokenValidity { get; set; }
         public bool isAuthenticated { get; set; }
 
+        public static  string blobSasToken { get; set; }
+        public static string blobServiceEndpoint { get; set; }
         public bool isLoggedIn { get; set; }
         public static bool rereshTokenExpired { get; set; }
         public static string apiRejectedMsg { get; set; } = string.Empty;
