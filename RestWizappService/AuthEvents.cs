@@ -61,7 +61,7 @@ namespace RestWizappService
                         if (claim.Type.ToUpper() == "APIACCESS")
                             AppConfigModel.apiAccess = claim.Value;
                         else
-                        if (claim.Type.ToUpper() == "TOKENGROUPCODE")
+                        if (claim.Type.ToUpper() == "APIGROUPCODE")
                             AppConfigModel.tokenGroupCode = claim.Value;
 
                     }

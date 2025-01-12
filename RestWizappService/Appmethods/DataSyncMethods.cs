@@ -229,7 +229,6 @@ namespace RestWizappService.Appmethods
                 //DataTable tMst = globalMethods.CreateDataTablewithNull<PosSkuSynch>(entryMstList);
 
 
-
                 conn = globalMethods.GetSqlConnection(ref cErr);
                 if (!String.IsNullOrEmpty(cErr))
                     goto lblLast;
@@ -405,8 +404,8 @@ namespace RestWizappService.Appmethods
                             " or ho_section_name<>a.section_name";
 
                     sda = new SqlDataAdapter(cmd);
-                    dSetMismatches.Tables.Add("article1");
-                    sda.Fill(dSetMismatches.Tables["article2"]);
+                    dSetMismatches.Tables.Add("article");
+                    sda.Fill(dSetMismatches.Tables["article"]);
                 }
 
 
