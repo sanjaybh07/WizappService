@@ -9,4 +9,6 @@ public class NewModel1
   public int MyProperty { get; set; }
   public int MyProperty3 { get; set; }
 
+  public int MyProperty { get; set; }
+
 }
